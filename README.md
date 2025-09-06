@@ -551,13 +551,7 @@ db.alerts.createIndex({ "tourist_id": 1, "status": 1, "created_at": -1 })
 
 4. **Make Changes and Test**
    ```bash
-   # Run all tests
-   ./scripts/test_all.sh
-   
-   # Or run individually
-   cd python-backend && pytest
-   cd web-dashboard && npm test  
-   cd flutter-app && flutter test
+   make test-all
    ```
 
 5. **Submit Pull Request**
@@ -608,7 +602,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Smart city ecosystem integration
 - [ ] Predictive tourism analytics
 - [ ] Cross-border coordination
-
-**Built with ❤️ for Tourist Safety in Northeast India**
-
-*Last Updated: September 2025*
