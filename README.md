@@ -29,12 +29,12 @@ Development of a comprehensive Smart Tourist Safety Monitoring & Incident Respon
 ### High-Level Architecture
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Flutter App   │    │  Next.js Web    │    │   IoT Devices   │
-│   (Tourist)     │    │   (Dashboard)   │    │  (Smart Bands)  │
-└─────────┬───────┘    └─────────┬───────┘    └─────────┬───────┘
-          │                      │                      │
-          └──────────────────────┼──────────────────────┘
+┌─────────────────┐                           ┌───────────────────┐
+│   Flutter App   │                           │   Next js Web     │
+│   (Tourist)     │                           │ (Dashboard & All) │
+└─────────┬───────┘                           └─────────┬─────────┘
+          │                                             │
+          └─────────────────────────────────────────────┘
                                  │
               ┌─────────────────────────────────┐
               │        API Gateway              │
