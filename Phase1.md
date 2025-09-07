@@ -1,4 +1,4 @@
-1. Police Verification & Token Generation
+### 1. Police Verification & Token Generation
 
 Tourist shows Aadhaar (Indian) or Passport (foreigner).
 
@@ -9,7 +9,7 @@ If correct → police generate Token_ID on Ethereum blockchain (stores verified 
 Backend maps:
 ID (Aadhaar/Passport) → Token_ID → Mobile Number.
 
-2. Tourist Login (Mobile App)
+### 2. Tourist Login (Mobile App)
 
 Tourist enters only Aadhaar (Indian) or Passport (foreigner) in the app.
 
@@ -25,7 +25,7 @@ Tourist enters OTP in the app.
 
 Backend verifies OTP.
 
-3. Profile Access
+### 3. Profile Access
 
 Once OTP is verified:
 
