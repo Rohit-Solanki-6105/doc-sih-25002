@@ -1,77 +1,60 @@
-Phase 1 —>
-1️⃣ Police Verification & Token Generation
-1.	Tourist provides physical documents:
+1. Police Verification & Token Generation
 
-○	Indian → Aadhaar
+Tourist shows Aadhaar (Indian) or Passport (foreigner).
 
-○	Foreigner → Passport
+Police verify the document physically.
 
-2.	Police verify documents manually.
+If correct → police generate Token_ID on Ethereum blockchain (stores verified tourist info).
 
-3.	Once verified, police generate a unique token (NFT or ERC20) on Ethereum blockchain, storing verified info:
+Backend maps:
+ID (Aadhaar/Passport) → Token_ID → Mobile Number.
 
-○	Name
+2. Tourist Login (Mobile App)
 
-○	Aadhaar (for Indian) or Passport (for foreigner)
+Tourist enters only Aadhaar (Indian) or Passport (foreigner) in the app.
 
-○	Mobile Number
+Backend checks DB:
 
-○	Verified Status
+Does this ID exist?
 
-4.	FastAPI backend stores mapping:
- ID → Token_ID → Mobile Number
+Does it have a token?
 
-○	ID = Aadhaar for Indians, Passport for foreigners
+If yes → Backend generates OTP → sends to tourist’s mobile number.
 
-________________________________________
-2️⃣ Tourist Mobile App Login
-1.	Tourist opens app and enters:
+Tourist enters OTP in the app.
 
-○	Indian → Aadhaar + OTP
+Backend verifies OTP.
 
-○	Foreigner → Passport + OTP
+3. Profile Access
 
-2.	Backend checks the database:
+Once OTP is verified:
 
-○	Does this ID exist?
+Backend fetches tourist info from blockchain (via Token_ID).
 
-○	Is a token issued?
+App displays verified profile:
 
-3.	If yes → generate OTP → send to mobile linked to the token.
+Name
 
-4.	Tourist enters OTP → backend verifies.
+Aadhaar/Passport
 
-________________________________________
-3️⃣ Profile Access (Blockchain Integration)
-1.	After OTP verification, backend fetches tourist info from Ethereum blockchain using Token_ID.
+Mobile Number
 
-2.	Mobile app displays verified profile:
+Verified Status
 
-○	Name
+4. Police Dashboard Auto-Update
 
-○	ID (Aadhaar or Passport)
+When tourist login succeeds:
 
-○	Mobile Number
+FastAPI emits tourist info via Socket.IO.
 
-○	Verified Status
+Police dashboard instantly updates, showing:
 
-________________________________________
-4️⃣ Real-Time Police Dashboard Update
-1.	FastAPI server uses Socket.IO to communicate with police dashboard.
+Tourist Name
 
-2.	On successful tourist login:
+Aadhaar/Passport
 
-○	Backend emits a real-time event containing tourist info to police dashboard.
+Token_ID
 
-3.	Police dashboard displays:
+Login Time
 
-○	Tourist Name
-
-○	ID (Aadhaar/Passport)
-
-○	Token_ID
-
-○	Login Time
-
-○	Verified Status
-
+Verified Status
