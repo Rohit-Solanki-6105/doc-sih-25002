@@ -1,6 +1,8 @@
 # Smart Tourist Safety Monitoring & Incident Response System
 ## Technical Documentation
 
+Live Dashboard Production Link : https://gov-police-dashboard-sih.vercel.app/
+
 ### Project Overview
 
 **Organization:** Ministry of Development of North Eastern Region  
