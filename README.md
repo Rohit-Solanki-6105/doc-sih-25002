@@ -1,7 +1,8 @@
 # Smart Tourist Safety Monitoring & Incident Response System
 ## Technical Documentation
 
-Live Dashboard Production Link : https://gov-police-dashboard-sih.vercel.app/
+Live Dashboard Production Link : https://gov-police-dashboard-sih.vercel.app
+Token Generation: https://police-token-generation.vercel.app
 
 ### Project Overview
 
