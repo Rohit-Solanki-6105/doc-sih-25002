@@ -3,6 +3,8 @@
 ### Live Dashboard Production Link : https://gov-police-dashboard-sih.vercel.app
 ### Token Generation: https://police-token-generation.vercel.app
 
+Tourist APK: [![Download APK](https://img.shields.io/badge/Download%20APK-20B2AA?style=for-the-badge)](https://github.com/Rohit-Solanki-6105/sih_tourist_app/releases/download/App/tourist_app_debug_prototype.apk)
+
 ### Project Overview
 
 **Organization:** Ministry of Development of North Eastern Region  
