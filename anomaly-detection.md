@@ -36,15 +36,13 @@
 
 Output - Tourist is SAFE
 
-### Case 2 – Not Normal (Unsafe)  
-**Input**
-```json
- {
+{
   "phone_on": 0,
   "inactivity_mins": 200,
   "route_deviation_km": 12,
   "crime_index": 0.8,
   "is_night": 1
 }
+
 
 Output - Tourist is UNSAFE
