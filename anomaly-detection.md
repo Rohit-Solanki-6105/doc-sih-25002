@@ -36,9 +36,6 @@
 
 Output - Tourist is SAFE
 
-### Case 1 – Normal (Safe)  
-**Input**
-```json
 {
   "phone_on": 0,
   "inactivity_mins": 200,
