@@ -42,10 +42,10 @@ Development of a comprehensive Smart Tourist Safety Monitoring & Incident Respon
 
 - **Mobile Application:** Flutter
 - **Web Portal:** Next.js
-- **Backend & Real-time Communication:** Python (FastAPI/Flask + Socket.io)
+- **Backend & Real-time Communication:** Python (FastAPI + Socket.io)
 - **Database:** MongoDB
 - **Blockchain:** Ethereum/Polygon for Digital ID
-- **AI/ML:** Python (TensorFlow/PyTorch)
+- **AI/ML:** Python 
 - **Real-time Features:** WebSocket connections
 
 ---
