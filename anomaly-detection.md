@@ -1,32 +1,31 @@
-Tourist Anomaly Detection – AI/ML Model Report
-Model Training Summary
+# Tourist Anomaly Detection – Model Report  
 
-Model: Random Forest Classifier
+## Model Training Summary  
+- **Algorithm**: Random Forest Classifier  
+- **Features Used**:  
+  - `phone_on` – Device status (1 = ON, 0 = OFF)  
+  - `inactivity_mins` – Minutes of no movement  
+  - `route_deviation_km` – Distance from planned route (km)  
+  - `crime_index` – Normalized (0–1) from NCRB data  
+  - `is_night` – Time indicator (1 = night, 0 = day)  
 
-Dataset Features:
+---
 
-phone_on (1 = ON, 0 = OFF)
+## Model Performance  
 
-inactivity_mins (minutes of no movement)
+| Metric                           | Value       |  
+|----------------------------------|-------------|  
+| Accuracy                         | **92.50%**  |  
+| Safe tourists correctly detected | 145 / 150   |  
+| Unsafe tourists correctly detected | 120 / 130 |  
 
-route_deviation_km (distance from planned route)
+---
 
-crime_index (normalized 0–1 from NCRB data)
+## Sample Predictions  
 
-is_night (1 = night, 0 = day)
-
-📊 Model Performance
-
-✅ Model trained successfully
-
-🎯 Accuracy: 92.50%
-
-✔️ Safe tourists correctly detected: 145 / 150
-
-🚨 Unsafe tourists correctly detected: 120 / 130
-
-1. Normal Case (Safe)
-Input:
+### Case 1 – Normal (Safe)  
+**Input**  
+```json
 {
   "phone_on": 1,
   "inactivity_mins": 20,
@@ -35,12 +34,12 @@ Input:
   "is_night": 0
 }
 
-Output:
-SAFE – Tourist is normal.
+Output - Tourist is SAFE
 
-2. High-Risk Case (Unsafe)
-Input:
-{
+### Case 2 – Not Normal (Unsafe)  
+**Input**
+```json
+ {
   "phone_on": 0,
   "inactivity_mins": 200,
   "route_deviation_km": 12,
@@ -48,18 +47,4 @@ Input:
   "is_night": 1
 }
 
-Output:
-ALERT – Tourist is unsafe!
-
-3. Risk Combination Case (Unsafe)
-Input:
-{
-  "phone_on": 1,
-  "inactivity_mins": 150,
-  "route_deviation_km": 0.5,
-  "crime_index": 0.9,
-  "is_night": 1
-}
-
-Output:
-ALERT – Tourist is unsafe!
+Output - Tourist is UNSAFE
