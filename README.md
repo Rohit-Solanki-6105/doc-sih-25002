@@ -1,6 +1,5 @@
 
 # Smart Tourist Safety Monitoring & Incident Response System
-## Complete Guide for Technical and Non-Technical Audiences
 
 ---
 
