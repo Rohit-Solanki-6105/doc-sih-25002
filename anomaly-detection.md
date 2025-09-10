@@ -21,8 +21,6 @@
 
 ---
 
-## Sample Predictions  
-
 ### Case 1 – Normal (Safe)  
 **Input**  
 ```json
@@ -35,6 +33,11 @@
 }
 
 Output - Tourist is SAFE
+```
+
+### Case 2 – Not Normal (Unsafe)  
+**Input**  
+```json
 
 {
   "phone_on": 0,
@@ -44,5 +47,5 @@ Output - Tourist is SAFE
   "is_night": 1
 }
 
-
 Output - Tourist is UNSAFE
+```
