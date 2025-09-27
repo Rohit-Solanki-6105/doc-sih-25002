@@ -5,6 +5,7 @@
 
 ## Table of Contents
 
+0. [Team Details and Project Overview](#team-details-and-project-overview)
 1. [Executive Summary](#executive-summary)
 2. [Problem Statement & Solution Overview](#problem-statement--solution-overview)
 3. [System Components Overview](#system-components-overview)
@@ -26,7 +27,10 @@
 
 Tourist APK: [![Download APK](https://img.shields.io/badge/Download%20Tourist%20APK-20B2AA?style=for-the-badge)](https://github.com/Rohit-Solanki-6105/doc-sih-25002/releases/download/App/tourist_app_debug_prototype.apk)
 
-### Project Overview
+### Team Details and Project Overview
+
+**Team ID: 54394**
+**Team Name (Registered on portal): Algorithm Avenger**
 
 **Problem Statement ID**: 25002  
 **Organization:** Ministry of Development of North Eastern Region  
