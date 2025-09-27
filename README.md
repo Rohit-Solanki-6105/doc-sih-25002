@@ -27,10 +27,10 @@
 
 Tourist APK: [![Download APK](https://img.shields.io/badge/Download%20Tourist%20APK-20B2AA?style=for-the-badge)](https://github.com/Rohit-Solanki-6105/doc-sih-25002/releases/download/App/tourist_app_debug_prototype.apk)
 
-### Team Details and Project Overview
+## Team Details and Project Overview
 
-**Team ID: 54394**
-**Team Name (Registered on portal): Algorithm Avenger**
+### Team ID: 54394
+### Team Name (Registered on portal): Algorithm Avengers
 
 **Problem Statement ID**: 25002  
 **Organization:** Ministry of Development of North Eastern Region  
